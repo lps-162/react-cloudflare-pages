@@ -1,6 +1,10 @@
 import './App.css';
-
-import Select from 'react-select'
+import {
+  Container,
+  Box,
+  ListItem,
+  UnorderedList,
+} from '@chakra-ui/react'
 
 function App() {
   const options = [
@@ -10,12 +14,17 @@ function App() {
   ]
 
   return (
-    <div className="App">
+    <Container>
       <h3>Super cool apps with React, Cloudflare</h3>
-      <div className='dropdown'>
-        <Select options={options} />
-      </div>
-    </div>
+      <Box>
+      <UnorderedList>
+        <ListItem>Lorem ipsum dolor sit amet</ListItem>
+        <ListItem>Consectetur adipiscing elit</ListItem>
+        <ListItem>Integer molestie lorem at massa</ListItem>
+        <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+      </UnorderedList>
+      </Box>
+    </Container>
   );
 }
 
